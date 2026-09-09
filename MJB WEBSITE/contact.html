@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSH STRATEGIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Header -->
+   <header class="header">
+     <img src="" alt="">
+     <div class="navMenu" id="navMenu">
+     <i class='bx bx-window-close' onclick="closeMenu()"></i>
+      <ul>
+       <li><a href="index.html">HOME</a></li>
+       <li><a href="about.html">ABOUT</a></li>
+       <li><a href="services.html">SERVICES</a></li>
+       <li><a href="contact.html">CONTACT</a></li>
+       <div class="casestudy-nav">
+        <li>CASE STUDIES</li>
+        <li><a href="case-study/conutrie.html">• Conutrie</a></li>
+        <li><a href="case-study/la-residence.html">• La Residence</a></li>
+        <li><a href="case-study/Urbannest-reality.html">• Urbannest</a></li>
+        <li><a href="case-study/olivia-beauty.html">• Olivia Beauty</a></li>
+        <li><a href="case-study/prime-space.html">• Prime Space</a></li>
+        <li><a href="case-study/bffa.html">• Bffa</a></li>
+       </div>
+      </ul>  
+     </div>
+     <i class='bx bx-menu' onclick="openMenu()"></i>
+   </header>
+   
+   <!-- MAP SECTION -->
+   <section class="map">
+<iframe src="https://www.google.com/maps?q=Akobo,+Ibadan,+Oyo,+Nigeria&output=embed"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </section>
+  
+   <!-- CONTACT PAGE -->
+   <section class="others-contact">
+     <div class="others-contact-text">
+     <h4 class="dot">What ever your project may be...</h4>
+      <p>As a design technologist, I'm skilled in the latest design and development techniques, and I have a passion for creating unique and effective user experiences. Let's talk about your specific needs and see how I can help.</p> 
+      
+       <div class="list">
+        <li><a href="whatsapp://send?phone=2348147363218&text=*HELLO%20MUSH%20FROM%20YOUR%20WEBSITE:*">+2348147363218</a></li>  
+        <li><a href="mailto:mushstrategist@gmail.com?subject=Connecting%20with%20MUSH&body=HELLO%20MUSH%20I%20WANT%20TO%20CONNECT%20WITH%20YOU%20VIA%20YOUR%20WEBSITE:">mushstrategist@gmail.com</a></li>
+        <li><a href="#">Like, Share & Subscribe</a></li>
+       </div>
+       
+       <div class="icons">
+         <a href="https://www.instagram.com/thesocialmediamanager.master?igsh=b2xndzJmbXRqY3l3"><i class='bx bxl-instagram-alt'></i></a> 
+         <a href="https://www.linkedin.com/in/mush-strategist-139b24400"><i class='bx bxl-linkedin'></i></a>
+       </div>
+      </div>
+      
+      <div class="others-contact-form">
+      <form action="https://formsubmit.co/mushstrategist@gmail.com" method="POST">
+       <input type="hidden" name="_captcha" value="false">
+       <input type="hidden" name="_template" value="table">
+        <span style="display:none;">
+          <input name="FROM MY WEBSITE:">
+        </span>
+        <input type="name" placeholder="Your Name" name="Name:" required>
+        <input type="email" placeholder="Your Email" name="Email:" required>
+        <input type="text" placeholder="Company Business" name="Business:" required>
+        <input type="text" placeholder="Service Required" name="Service Required:" required>
+        <input type="text" placeholder="Budget" name="Budget:">
+        <textarea name="Project Description:" id="" cols="35" rows="10" placeholder="Project Description" required></textarea>
+        <input type="submit" value="Send Message" class="submit">
+      </form>  
+    </div>
+   </section>
+   
+<script>
+   var navMenu = document.getElementById("navMenu");
+   
+   function openMenu() {
+       navMenu.style.right = "0";
+   }
+   
+   function closeMenu() {
+       navMenu.style.right = "-200px";
+   }
+</script>
+</body>
+</html>
