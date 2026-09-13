@@ -906,3 +906,744 @@ span{
 .map iframe{
     width: 100%;
 }
+/* =========================================================
+   MJB STRATEGIST — LAPTOP RESPONSIVENESS
+   1024px and above
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    section {
+        padding: 120px 8% 100px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* =====================================================
+       HEADER / NAVIGATION
+       ===================================================== */
+
+    .header {
+        height: 80px;
+        padding: 0 7%;
+    }
+
+    .header > i.bx-menu {
+        display: none;
+    }
+
+    .navMenu {
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        transition: none;
+        text-align: left;
+    }
+
+    .navMenu > i.bx-window-close {
+        display: none;
+    }
+
+    .navMenu ul {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        padding: 0;
+    }
+
+    .navMenu ul li {
+        display: inline-block;
+    }
+
+    .navMenu a {
+        display: inline-block;
+        font-size: 13px;
+        margin: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .navMenu a:hover {
+        color: #ffd700;
+    }
+
+    /* Case studies dropdown area */
+
+    .casestudy-nav {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .casestudy-nav > li:first-child {
+        font-size: 13px;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .casestudy-nav li {
+        margin-bottom: 0;
+    }
+
+    .casestudy-nav li a {
+        font-size: 12px;
+        margin: 0;
+        display: block;
+    }
+
+    .casestudy-nav li:not(:first-child) {
+        display: none;
+    }
+
+    .casestudy-nav:hover li:not(:first-child) {
+        display: block;
+    }
+
+    .casestudy-nav:hover {
+        background-color: #151515;
+        padding: 15px;
+        border-radius: 8px;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        min-width: 160px;
+    }
+
+    .casestudy-nav:hover li {
+        margin-bottom: 10px;
+    }
+
+
+    /* =====================================================
+       HOME
+       ===================================================== */
+
+    .home {
+        min-height: 100vh;
+        height: auto;
+        padding: 180px 10% 120px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        background-position: center;
+    }
+
+    .div-box-one {
+        width: fit-content;
+        font-size: 12px;
+        padding: 7px 18px;
+        margin-bottom: 35px;
+    }
+
+    .home h1 {
+        font-size: 5.5rem;
+        line-height: 1.05;
+        margin-bottom: 20px;
+    }
+
+    .home h5 {
+        font-size: 15px;
+        margin-bottom: 25px;
+        max-width: 900px;
+    }
+
+    .home p {
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 850px;
+        margin-bottom: 35px;
+    }
+
+    .home .btn {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       ABOUT SECTION ON HOME
+       ===================================================== */
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .about h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 42px;
+    }
+
+    .about p {
+        font-size: 15px;
+        line-height: 1.9;
+        margin-bottom: 35px;
+    }
+
+
+    /* =====================================================
+       SERVICES — HOME PAGE
+       ===================================================== */
+
+    .services {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .services h2 {
+        margin-top: 0;
+        margin-bottom: 60px;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .services h2 {
+        grid-column: 1 / -1;
+    }
+
+    .services-content {
+        padding: 35px 30px;
+        margin-bottom: 0;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-content h3 {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    .services-content b {
+        font-size: 13px;
+    }
+
+    .services-content .p2 {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .services-content .services-help {
+        padding: 22px;
+        margin-top: auto;
+    }
+
+    .services-content h5 {
+        margin-bottom: 12px;
+    }
+
+    .services-help p {
+        font-size: 12px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+
+    /* =====================================================
+       PORTFOLIO
+       ===================================================== */
+
+    .portfolio {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .portfolio h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 42px;
+    }
+
+    .portfolio h3 {
+        font-size: 25px;
+        max-width: 700px;
+    }
+
+    .portfolio hr {
+        width: 100px;
+        margin: 20px 0 30px;
+    }
+
+    .portfolio > p {
+        max-width: 850px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .portfolio-flex {
+        margin: 50px 0 0;
+        gap: 25px;
+        padding: 10px 0 25px;
+    }
+
+    .portfolio-content {
+        width: 330px;
+        padding: 30px;
+        min-height: 500px;
+    }
+
+    .portfolio-content img {
+        width: 100%;
+    }
+
+    .portfolio-content h4 {
+        font-size: 18px;
+    }
+
+    .portfolio-content a {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+       ===================================================== */
+
+    .more-about {
+        padding: 160px 15% 100px;
+    }
+
+    .more-about h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 45px;
+    }
+
+    .more-about p {
+        font-size: 15px;
+        line-height: 2;
+        margin-bottom: 35px;
+    }
+
+    .about-others {
+        min-height: 550px;
+        display: grid;
+        grid-template-columns: 350px 1fr auto;
+        gap: 70px;
+        align-items: center;
+        padding: 100px 10%;
+    }
+
+    .about-others-img {
+        width: 320px;
+        height: 320px;
+        margin: 0;
+    }
+
+    .about-others-text {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .about-others-text h3 {
+        font-size: 30px;
+        margin: 0 0 25px;
+    }
+
+    .about-others-text p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .about-others .btn {
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       SERVICES PAGE
+       ===================================================== */
+
+    .services-ii {
+        padding: 150px 7% 100px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .services-ii .h2 {
+        grid-column: 1 / -1;
+        margin-top: 0;
+        margin-bottom: 45px;
+        font-size: 42px;
+    }
+
+    .services-ii .services-content {
+        min-height: 430px;
+        margin-bottom: 0;
+        padding: 35px;
+    }
+
+    .services-ii .services-content .btn-div {
+        margin-top: auto;
+        padding-top: 30px;
+    }
+
+    .services-others {
+        min-height: 500px;
+
+        display: grid;
+        grid-template-columns: 350px 1fr auto;
+        gap: 70px;
+        align-items: center;
+
+        padding: 90px 10%;
+    }
+
+    .services-others .about-others-img {
+        width: 320px;
+        height: 320px;
+        margin: 0;
+    }
+
+    .services-others-text {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .services-others-text h3 {
+        font-size: 30px;
+        margin: 0 0 25px;
+    }
+
+    .services-others-text p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .services-others .btn {
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       CASE STUDY HEADER
+       ===================================================== */
+
+    .casestudy-min-header {
+        padding: 150px 10% 80px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+    }
+
+    .casestudy-min-header h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 48px;
+    }
+
+    .casestudy-min-header .p1 {
+        font-size: 15px;
+        line-height: 1.9;
+        margin-top: 25px;
+    }
+
+    .casestudy-min-header img {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       CASE STUDY — CHALLENGE / STRATEGY
+       ===================================================== */
+
+    .casestudy-ii {
+        padding: 80px 10%;
+    }
+
+    .casestudy-ii .chastr-flex {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .casestudy-ii .chastr-div {
+        min-width: 0;
+        max-width: none;
+        padding: 30px;
+        min-height: 280px;
+    }
+
+    .chastr-div h2 {
+        font-size: 25px;
+    }
+
+    .chastr-div p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* =====================================================
+       WHAT I DID
+       ===================================================== */
+
+    .casestudy-ii .whdid-div {
+        margin: 50px 0 0;
+        padding: 30px;
+    }
+
+    .whdid-div h2 {
+        font-size: 25px;
+    }
+
+    .whdid-div ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .whdid-div li {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+
+    /* =====================================================
+       CONTENT / IMPACT
+       ===================================================== */
+
+    .conimp-flex {
+        margin: 50px 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .conimp-flex .conimp-div {
+        min-width: 0;
+        max-width: none;
+        padding: 30px;
+        min-height: 250px;
+    }
+
+    .conimp-div h2 {
+        font-size: 25px;
+    }
+
+    .conimp-div p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* =====================================================
+       METRICS
+       ===================================================== */
+
+    .casestudy-iii {
+        padding: 100px 10%;
+    }
+
+    .metric-flex {
+        margin: 0;
+        padding: 35px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        border-width: 5px;
+    }
+
+    .metric-flex .metric-content {
+        margin: 0;
+        text-align: center;
+    }
+
+    .metric-flex i {
+        font-size: 20px;
+    }
+
+    .metric-flex p {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       CASE STUDY FOOTER NAVIGATION
+       ===================================================== */
+
+    .foot-flex {
+        margin: 60px 0 0;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foot-flex a {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+       ===================================================== */
+
+    .client-testimonial {
+        padding: 100px 15%;
+    }
+
+    .client-testimonial h2 {
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .client-testimonial .client-div {
+        max-width: 800px;
+        margin: 50px auto 0;
+        padding: 50px;
+    }
+
+    .client-div p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+
+    /* =====================================================
+       CONTACT
+       ===================================================== */
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: start;
+
+        padding: 150px 10% 100px;
+    }
+
+    .contact-text h2 {
+        margin-top: 0;
+        font-size: 42px;
+    }
+
+    .contact-text p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 14px;
+        padding: 16px;
+    }
+
+    .contact-form form textarea {
+        height: 220px;
+    }
+
+
+    /* =====================================================
+       OTHER CONTACT PAGE
+       ===================================================== */
+
+    .others-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: start;
+
+        padding: 150px 10% 100px;
+    }
+
+    .others-contact-text h2 {
+        margin-top: 0;
+        font-size: 42px;
+    }
+
+    .others-contact-text p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .map {
+        grid-column: 1 / -1;
+        margin: 50px 0 0;
+    }
+
+    .map iframe {
+        min-height: 400px;
+    }
+
+}
+
+
+/* =========================================================
+   LARGE LAPTOP / DESKTOP
+   1200px+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .home {
+        padding-left: 12%;
+    }
+
+    .home h1 {
+        font-size: 6.5rem;
+    }
+
+    .home p {
+        max-width: 900px;
+    }
+
+    .services,
+    .services-ii {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .services-content {
+        min-height: 520px;
+    }
+
+    .portfolio-content {
+        width: 350px;
+    }
+
+}
